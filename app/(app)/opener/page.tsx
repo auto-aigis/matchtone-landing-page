@@ -50,7 +50,7 @@ export default function OpenerPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Match's Profile</CardTitle>
+          <CardTitle>Match&apos;s Profile</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div>
