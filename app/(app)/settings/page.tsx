@@ -32,7 +32,7 @@ export default function SettingsPage() {
           <div>
             <label className="text-sm font-semibold text-gray-700">Subscription Tier</label>
             <p className="mt-1 text-gray-900">
-              {user?.tier.charAt(0).toUpperCase() + user?.tier.slice(1)}
+              {user?.tier ? user.tier.charAt(0).toUpperCase() + user.tier.slice(1) : '(not set)'}
             </p>
           </div>
         </CardContent>
