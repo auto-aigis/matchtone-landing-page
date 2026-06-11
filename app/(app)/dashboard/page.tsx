@@ -57,7 +57,7 @@ export default function DashboardPage() {
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-lg font-semibold text-gray-900">Your Plan</h2>
-          <p className="mt-1 text-gray-600">You are currently on the {user?.tier.charAt(0).toUpperCase() + user?.tier.slice(1)} tier</p>
+          <p className="mt-1 text-gray-600">You are currently on the {user?.tier ? user.tier.charAt(0).toUpperCase() + user.tier.slice(1) : 'Unknown'} tier</p>
         </div>
         <Badge>{user?.tier.toUpperCase()}</Badge>
       </div>
